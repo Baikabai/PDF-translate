@@ -1,0 +1,1470 @@
+Available online at www sclencedirect com
+
+S&Y. _ SciVerse ScienceDirect pannel ot
+
+a MARKETS
+
+ELSEVIER Journal of Financial Markets 16 (2013) 477-S04
+
+‘woweelsevier com locate finmar
+
+Short-term residual reversal
+
+David Blitz’, Joop Huij*”, Simon Lansdorp**, Marno Verbeek”
+
+*Robeco Quamitaive Strategies, Rabeco Aset Management, Coosinge 120, 3011 AG Rotterdam, The Netherlands
+Rotterdam Scho! of Management, Eras Unieriy Rotedam, Burgmeeter Oulaan 50
+13062 PA Rotterdam, The Netherlands
+
+Recsived 10 October 201 212
+
+reccived in revised form 27 October 2012; accepted 31 Octobe
+“Available online 14 November 2012
+
+Abstract
+
+Conventional short-term reversal strategies exhibit dynamic exposures to the Fama and French
+(1993) factors. We develop a novel reversal strategy based on residual stock returns that does not
+exhibit these exposures and consequently earns risk-adjusted returns that are twice as large as those
+of a conventional reversal strategy. Residual reversal strategies generate statistically and evonomic-
+ally significant profits net of trading costs, even when we restrict our sample to large-cap stocks over
+the post-1990 period. Our results are inconsistent with the notion that reversal effects are the result of|
+trading frietions or non-synchronows trading of stocks and pose a serious challenge to rational asset
+pricing models.
+
+© 2012 Elsevier B.V. All rights reserved.
+
+JEL classification: GU; G12: GI
+
+‘Keywords: Short-term reversil; Dynamic risks: Residual returns; Trading costs; Market efficiency
+
+1. Introduction
+
+‘A conventional short-term reversal strategy as documented by Lehmann (1990) and
+Jegadeesh (1990), i, a strategy that buys (sells) stocks with low (high) total returns
+over the past month, exhibits dynamic exposures to the Fama and French (1993) factors.
+AS these implicit factor bets are inversely related to factor return realizations over the
+formation month, the reversal strategy is negatively exposed to the short-term momentum
+
+“Conesponding author. Tel: +31 10-224 2071; fax: +31 10411 5282.
+Exmail addresses: d.c.bitzarobeco.com (D. Blitz), jhuijrsm.al GI. Hui),
+slansdorprobeco.com (S. Lansdorp), mverbeckiarsm.nl (ML. Verbeek)
+
+1386-4181/S-sce front matter © 2012 Elsevier BL. All rights reserved,
+np /dx doi. org/ 10,1016 jiamar. 2012. 10.005
+478 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+
+effect in factor returns of Moskowitz and Grinblatt (1999) and Chen and De Bondt (2004),
+As a result, the dynamic factor exposures of a reversal strategy are likely to negatively
+affect its profitability, while, at the same time, contributing significantly to the risks
+involved.
+
+We introduce a short-term reversal strategy based on residual stock returns that does
+not exhibit such dynamic factor exposures and find that this strategy earns returns that are
+higher and substantially less volatile than those of a conventional short-term reversal
+strategy. More specifically, stock residual returns are computed by adjusting total returns
+for the stocks’ exposures to the Fama-French factors and scaling the residual returns by
+their volatility. We document that this reversal strategy earns risk-adjusted returns that are
+twice as large as those of a conventional reversal strategy. Our results also show that the
+strategy’s profitability has been relatively stable over our sample period from January 1929
+to December 2010, including the more recent decades, and that profitability remains
+economically and statistically significant after taking trading costs into account. In
+addition, we show that residual stock returns have predictive power for future returns
+above and beyond that of total stock returns.
+
+Several authors have argued that the profits of conventional short-term reversal
+strategies largely disappear once trading costs are taken into account (e.., Ball, Kothari
+and Wasley, 1995; Conrad, Gultekin and Kaul, 1997; Avramov, Chordia and Goyal,
+2006). Consistent with this stream of literature, we find that, indeed, the returns of a
+conventional reversal strategy net of trading costs are indistinguishable from zero or even
+negative. However, when we investigate the impact of trading costs on the profitability of
+residual reversal strategies, we find that the profits of the strategy exceed any reasonable
+level of trading costs by a wide margin, Even though reversal strategies generate high
+portfolio turnover, we find that residual reversal strategies yield significantly positive
+returns of more than 7% per annum net of trading costs.
+
+The large residual reversal profits we document are remarkably robust over time and the
+cross-section of stocks. We find that the residual reversal strategy outperforms a conventional
+reversal strategy during every single decade in our sample in terms of risk-adjusted return,
+Most notably, the residual reversal strategy earns large positive returns during the wo
+most recent decades, following the public dissemination of the reversal effect, while the
+conventional reversal strategy earns returns close to zero over the same period. In fact, over
+the post-1990 period, the residual reversal strategy yields large positive returns after trading
+costs even when we restrict the investment universe to the 500 or only 100 largest USS. stocks.
+Also during the five most recent years in our sample, which include the “quant meltdown” of
+August 2007 and its aftermath, we observe that the residual reversal strategy consistently
+outperforms a conventional reversal strategy. Moreover, when we evaluate reversal profits
+within different industries, we find that the strategy based on residuall returns outperforms the
+conventional strategy within each of the 10 industries of French (2011)
+
+Our results shed new light on several alternative explanations that have been put
+forward in the academic literature to understand the reversal effect. Our finding that net
+reversal profits persist over the most recent decades in our sample, during which trading
+volumes dramatically increased, does not support the explanation that reversals are
+induced by inventory imbalances by market makers and that reversal profits are a
+‘compensation for bearing inventory risks (¢.g., Jegadeesh and Titman, 1993b). In addition,
+the finding that reversal profits are observed among the 500 or even 100 largest stocks is
+inconsistent with the notion that non-synchronous trading contributes to reversal profits
+
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-S04 49
+
+(eg, Lo and MacKinlay, 1990; Boudoukh, Richardson and Whitelaw, 1994) since this
+explanation implies that reversal profits should be concentrated among small-cap stocks.
+Our results do not appear to be inconsistent, however, with the explination that some
+inyestors tend to overreact to information and that stock price reversals originate from
+transitory changes in demand for immediacy by these impatient traders (see, eg.,
+Lehmann, 1990; Jegadeesh and Titman, 199Sa). Apart from contributing to a better
+understanding of the origins of the reversal effect, our findings also have important
+implications for the practical implementation of reversal strategies, indicating that in order
+to generate sufficiently large returns to cover trading costs, itis of crucial importance to
+control for dynamic factor exposures.
+
+Our work is related to the research of Grundy and Martin (2001), who show that
+intermediate-term momentum strategies exhibit dynamic factor exposures, and the work of
+Gutierrez and Pirinsky (2007) and Blitz, Huij and Martens (2011), who find that intermediate-
+term momentum strategies based on residual instead of total stock returns yield significantly
+higher risk-adjusted returns. Our work is also related to the strand of literature that re-examines
+market anomalies after incorporating trading costs (eg., Lesmond, Schill and Zhou, 2004;
+Korajezyk and Sadka, 2004; Avramov, Chordia and Goyal, 2006; Goyal, Sadka, Sadka, and
+Shivakumar, 2009) and the contemporaneous work of Hameed, Mian, and Huang (2010) and
+Da, Liu and Schaumburg (2011), who show that reversal profits are higher within industries
+than across industries.
+
+‘The remainder of this paper is organized as follows. In Section 2 we analytically show
+that conventional reversal strategies exhibit dynamic exposures to common factors that
+affect their risks and profitability and we develop the residual reversal strategy. In Section
+3 we empirically investigate the impact of these factor exposures on the risks and profits of
+both reversal strategies. In Section 4 we gauge the economic significance of reversal profits
+by evaluating their profitability net of trading costs. In Section 5 we conduct several
+follow-up analyses, including an examination of the comparative strength of both reversal
+strategies, the profitability of both reversal strategies within industries, the relation
+between reversal strategies’ dynamic factor exposures and their profitability using a non-
+parametric approach, calendar month effects, and the robustness of our results to using
+alternative portfolio weighting schemes. In Section 6 we discuss the implications of our
+empirical findings for alternative explanations that have been put forward in the academic
+literature to understand the reversal effect. Finally, we conclude in Section 7.
+
+2. Analytical analysis
+
+In this section we analytically show that conventional reversal strategies implicitly
+exhibit dynamic exposures to common factors that affect their risks and profitability
+Additionally, we develop a reversal strategy based on residual stock returns that does not
+exhibit these dynamic factor exposures.
+
+Let us assume that stock returns are described by the following K-factor model:
+
+rig =i + BE + Bie. wo
+a
+
+where y= Sf_, Bf is the unconditional expected return of stock i; y(>0 is the
+unconditionally expected return on factor k; f= r4—y is the return on factor k above its
+480 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+
+expectation at time fis the residual return at time 1; and fi is the exposure of stock ito
+factor k. Without loss of generality, we assume the K factors are orthogonal, so EUfif/]=0
+for i#j and E[(/)]=a}.. In addition, we assume that Covlfif{_\]=0 for i#j and
+Conf )=0 for ij
+
+Because of its analytical tractability, we follow Lehmann (1990), Lo and MacKinlay
+(1990), and Jegadeesh and Titman (199Sa) and consider a (zero-investment) conventional
+reversal strategy that assigns a portfolio weight to stock fat time 1 of
+
+@)
+
+the number of stocks in the universe at time ¢ and 7, = (1/N,)
+rian The expected exposure of the reversal strategy to the jth factor conditional on
+turn of the jth factor at time tI now equals
+
+(Sorat :
+
+where 0% =(1/N) (BiB). Hence, the right-hand side of Eq. (3) shows that the
+conventional reversal strategy’s common factor exposures consist of a systematic and a
+dynamic component, The first component indicates that the conventional reversal strategy,
+is systematically negatively exposed to factors that have a positive expected return, while
+the second component implies that the reversal strategy has dynamic factor exposures
+depending on the demeaned factor returns over the formation period. For example, when
+the market return is positive over the formation period, high-beta stocks typically earn
+higher average returns than low-beta stocks, causing the conventional reversal strategy to
+assign a relatively low weight to high-beta stocks and a high weight to low-beta stocks. As
+the net market beta of the reversal strategy is negative over the subsequent
+eriod.
+
+sd profits m, of the conventional reversal strategy at time f, conditional on the
+K factor returns at time ¢—1, can now be written as
+
+Ohloh. @)
+
+Elif sk = 1, xine(3 natal k= 1 -’) 2 b-A\-¥, (4)
+where
+
+°
+
+= YO otk Cool Sih 1)
+
+So (uh + EU). (a)
+
+a
+
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-S04 48
+
+and
+
+)
+
+Hence, the profits of a conventional reversal strategy can be decomposed into four
+different components. The first component, 02, is the cross-sectional variance of expected
+stock returns. This component has a negative impact on reversal profits, which results from
+the conventional reversal strategy being systematically negatively exposed to factors with
+positive expected returns. The second component, ®, is the sum of the cross-sectional
+variances in factor exposures times the persistence in factor returns. This component
+captures that the systematic exposures towards positive factors are exacerbated when
+persistence in factor returns is stronger. The third component, 4,_, captures the short-
+term dynamics in total reversal profits due to the strategy's dynamic factor exposures
+conditional on the factor realizations at time 11. It is equal to the dynamic factor
+exposures component, which follows from Eq. (3), times the conditionally expected factor
+returns at time ¢, Since the factor exposures of a conventional reversal strategy are
+inversely related to the unexpected factor returns over the past month, this component can
+have either a positive or a negative impact on reversal profits, depending on the extent to
+which factor returns persist. If factor returns exhibit positive autocorrelation, the impact of
+this component on the total reversal profits is negative. The final component, ¥, results
+from autocorrelation in the residual stocks returns and is positive if residual stock returns
+exhibit negative serial correlation,
+
+Our analytical exercise above not only demonstrates that conventional reversal
+strategies exhibit factor exposures that have a negative impact on their profitability, but
+can also be used to show that these exposures affect the variability in the strategy’s profits:
+
+is a) Vartr, o)
+
+Eq, (9) implies that if the lagged factor returns are more extreme and the magnitude of
+factor exposures is larger, the variance in expected reversal profits is also higher.
+
+‘As an alternative to the conventional reversal strategy, we develop a reversal strategy
+that is based on residual returns instead of total returns. For tractability, we consider a
+strategy that assigns a portfolio weight to stock i at time fof
+
+1
+Tas — Hy (ater). (0)
+
+In the empirical analyses, we consider an implementable version of this strategy based on.
+
+the same logic. The exposure of this strategy to the jth factor at time r equals zero by
+construction, since
+
+(Ssnait.) =e (EE bor
+
+at) =0 ay
+
+482 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+
+‘The expected profits n, of this strategy at time ¢ can now be written as
+
+x
+auj=#( Sn.) «
+while the variability for the residual reversal strategy's profits is given by
+Varn] = Var | S090 “) 1) Vartrs (3)
+
+Hence, by construction the residual reversal strategy does not have systematic and
+dynamic exposures to the K factors. Contrary to the conventional reversal strategy, the
+residual reversal strategy’s profits are not reduced by having systematic negative exposures
+to factors with positive expected returns. Moreover, the strategy’s profits do not depend on
+persistence in factor returns.
+
+Given the stylized fact that factor returns exhibit some persistence (e.g., Fisher, 1966;
+Moskowitz and Grinblatt, 1999; Chen and De Bondt, 2004), we can deduce that the returns
+ofa conventional reversal strategy are negatively affected by the strategy’s negative exposure
+to the short-term momentum effect in factor returns and that, consequently, the expected
+return is larger for our residual reversal strategy. A second notable difference with the
+conventional reversal strategy is that the profits of a residual reversal strategy can be expected
+to exhibit a lower variability as a result of not having factor exposures. We therefore expect a
+residual reversal strategy to outperform a conventional reversal strategy in terms of both risk
+and return, In the subsequent sections we empirically test this conjecture.
+
+3. Main em
+
+sal analyses
+
+In this section we present our main empirical results. We first describe our data. Next we
+examine the characteristics and performance of a conventional short-term reversal
+strategy, after which we conduct a similar analysis for our residual reversal strategy.
+Finally, we discuss the robustness of our findings over time.
+
+BL. Data
+
+Our stock return data are obtained from the monthly CRSP US Stock Database. We select
+common U.S. stocks listed on the NYSE, AMEX, and NASDAQ markets that (i) have
+a stock price above $5 and (ii) have a market capitalization above the NYSE median at the
+end of the formation month. We exclude closed-end funds, Real Estate Investment Trusts
+
+Fig. 1, Formation period loadings of the conventional reversal strategy
+
+This figure plots the estimated factor exposures of total retum winner portfolios and loser portfolios aginst the returns
+ofthe Fama and French (1993) factors in month r—I. Panel A shows the market betas of the winner and loser portfolios
+against the excess return on the market portfolio during the formation month. Panels B and C show the SMB factor
+‘exposures and /LML fictor exposures against the formation period returns on the SMB and HIME factors, respectively
+The soli line represents the linearly fitted relation betwen the factor exposure of the loser portfolio and the factor
+return. The dashed line represents this relation forthe winner portolio. The sample peviod is from January 1929 0
+December 2010. The sample includes all common US. stocks Hsed on the NYSE, AMEX and NASDAQ markets that
+have, a the end ofthe Formation month, a market capitalization above the NYSE madian. a price above 85, and return
+data for all precoding 36 months. Pane! A: Market Factor, Panel B: SMB Factor and Panel C: HME Factor.
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-S04
+
+(REITs), unit trusts, American Depository Receipts (ADRs), and foreign stocks from our
+analysis. Common factor data are downloaded from French (2011). To be included in our
+sample at a given point in time we require a stock to have a complete return history over the
+preceding 36 months. Our sample covers the period from January 1926 to December 2010.
+
+A
+
+0.40 -0'30
+
+B
+
+SMB Bets
+
+020 -0.10 0.00
+
+010
+RMRF,,
+
+020
+
+050
+
+IML Bete
+
+020
+
++> so
+
+2.00
+2.60
+
+= Losers + Winners
+
+Winners
+
+Losers
+484 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+3.2. Factor exposures of conventional reversal strategies
+
+In our first empirical analysis we investigate the extent to which conventional reversal
+strategies based on total stock returns exhibit dynamic exposures to the Fama and French
+(1993) (henceforth, Fama-French) factors. We use these factors in our analysis since they
+are widely accepted factors for explaining a large portion of the variability in U.S. stock
+returns, Reversal portfolios are constructed by sorting stocks at the end of each month into
+winner and loser portfolios based on their returns during that month. The winner portfolio
+consists of all the stocks with returns over the past month above the cross-sectional
+average and the loser portfolio consists of stocks with returns below the cross-sectional
+average, with weights inversely proportional to each stock's past I-month return in excess
+of the return on the equally-weighted index as in Eq. (2). We also employ alternative
+portfolio weighting schemes, including equal- and value-weighting. As we discuss in detail
+in Section 5.5, the outcomes are virtually identical for all these weighting schemes.
+
+Next, we estimate the winner and loser portfolios’ exposures to the Fama-French factors
+at the end of each month by taking the weighted factor exposures of all stocks in the
+winner and loser portfolios. Exposures to the Fama-French factors are estimated over the
+preceding 36 months [/—36, 11] from
+
+rua + BM RMRE, + BO!" SMB, + BOM HME, + o, «ay
+
+where r,, is the return of stock i in month £ in excess of the one-month U.S. Treasury bill
+rate; RMRF,, SMB, and HML, are the three Fama-French factors representing the
+market factor, the size factor, and the value factor, respectively; 2, , B°™®, and pe
+are parameters to be estimated; and é,, is the residual return of stock i in month t.
+
+In Fig. 1 we plot the estimated factor exposures of the winner and loser portfolios
+against the returns of the Fama-French factors in month tI. Panel A shows the market
+betas against the excess return on the market portfolio during the formation month
+Consistent with the predictions of our analytical model in the previous section, we observe
+a negative relation between the market beta of the loser portfolio and lagged market
+returns, and a positive relation for the winner portfolio. Hence, a conventional reversal
+strategy that is long in loser stocks and short in winner stocks exhibits dynamic exposures
+to the market factor depending on the sign and magnitude of the return on the market
+factor during the formation month 1
+
+Likewise, Panels B and C of Fig. | plot the SMB and HML factor exposures of the
+winner and the loser portfolios against the formation period returns on the SMB and
+HML factors, respectively. We observe that the conventional reversal strategy also exhibits
+
+Fig. 2, Formation period loadings of the residual reversal strategy
+This figure plots the estimated factor exposures of residual return winner portfolios and loser portfolios against
+the returns of the Fama and French (1993) factors in month 11. Panel A shows the market betas of the winner
+and loser portfolios against the exces return on the market portfolio during the formation month, Panels B and C
+show the SB factor exposures and IML factor exposures against the formation period returns on the SMB and
+HAMEL factors spectively. The solid line represents the linearly ited relation between the factor exposure of the
+loser portfolio and the factor return. The dashed line represents this relation for the winner portfolio. The sample
+period is from Janvary 1929 to December 2010. The sample ineludes all common U.S. stocks listed on the NYSE.
+AMEX, and NASDAQ markets that have, atthe end of the formation month, a market capitalization above the
+NYSE median, a price above $5, and return data forall preceding 36 months. Panel A: Market Factor, Panel Br
+SMB Factor and Panel C: HML Factor
+
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-04 485
+
+dynamic exposures to these two common factors. In months during which the return on
+the SMB factor was positive, the winner portfolio typically consists of small-capitalization
+stocks while the loser portfolio typically consists of large-capitalization stocks. In months
+during which the return on the HML factor was positive, the winner portfolio typically
+consists of value stocks while the loser portfolio typically consists of growth stocks. The
+
+A
+
+040 030 -020 -010 000 0710 020 030 040 050 060
+
+MRF,
+B
+2.50
+2.0.
+1.80:
+g
+0530
+c
+z
+Es
+“1.00
+“150.
+2.0:
+aso WML
+
+Losers ----~ Winners
+
+= Losers + Winners
+486 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+
+Table 1
+Reversal returns and dynamic factor exposures
+
+‘This table presents average monthly reversal strategy returns, standard deviations and annualized Sharpe
+ratios, as wells coelicient estimates belonging tothe conditional factor model explained in Eq. (15). In Panel A,
+the results are reported for the conventional reversal strategy and Panel B reports the results or the residual
+reversal strategy. The sample perio is from January 1929 to December 2010, The sample includes all common
+US. stocks listed on the NYSE, AMEX. and NASDAQ markets that have, atthe end of the formation month, a
+‘market capitalization above the NYSE median, a price above $5, and return data forall preceding 36 months,
+Newey-West corrected rstatisties are reported in parenthess,
+
+Panel A: Conventional reversal strategy
+
+Rew Stdev Sharpe
+009 41 057
+
+6B)
+
+Alpha = RMRF SMB -HML-—RMRFLUP = SMBLUP-HMLLUP AG
+087 0.40 “oor 039 056 002 0.69 027
+C434) (0.10) 782), 13.08) (023) 1047)
+
+Panel B: Residual reversal strategy
+
+Return Stdev Sharpe
+
+0.90 2.60 120
+
+«035
+
+Alp = RMR SMB HME) RMRF_UP SMBLUPHML_UP AG.
+0.90 on =003 002 ~0.08 os 0.2 os
+039) 074) (25) (165) (248)
+
+results demonstrate that conventional reversal strategies
+Fama-French factors.
+
+To illustrate the impact of the dynamic exposures to the Fama-French factors on the
+risks and profits of conventional reversal strategies, we evaluate reversal returns using a
+conditional factor model in the spirit of Grundy and Martin (2001)
+a+ BIRMRE, + (SMB, + PS HML, + f* RMRF_UP,
++B°SMB_UP, + f° HML_UP, + 64. as)
+where RMRF_UP,, SMB_UP,, and HML_UP, are interaction variables that indicate the
+excess returns on the RMRF, SMB, and HML factors in month t, respectively, if the
+returns on the factors are positive in month 11, and zero otherwise. In this setup, finding
+significantly negative coefficients for the interaction variables is consistent with the factor
+exposures of reversal strategies being inversely related to the signs of the factor returns
+over the past month.
+
+‘The results of the conditional factor model analysis for the conventional reversal
+strategy are presented in Panel A of Table 1. Consistent with our expectation, the
+coefficient estimates for RMRF, and HML, ate significantly positive, while the estimates
+for RMRF_UP, and HML_UP, are significantly negative. Only the exposures to the SMB
+factor are insignificant, but this is not surprising in light of the fact that we exclude stocks
+with a share price below $5 or a market capitalization below the NYSE median from our
+sample, The results indicate that the dynamics of the conventional reversal strategy's factor
+
+exhibit dynamic exposures to the
+
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-S04 487
+
+exposures are statistically significant, and also that these exposures explain a significant
+portion of the strategy’s risks. More specifically, the adjusted K? of 27% for our relatively
+simple conditional regression model indicates that over one-fourth of the variability in the
+conventional reversal strategy’s returns can be attributed to dynamic factor exposures.
+
+Our analytical analysis in the previous section showed that persistence in factor returns
+hurts the profitability of a conventional reversal strategy. As several authors report
+persistence in common factor returns (¢.g., Fisher, 1966; Moskowitz and Grinblatt, 1999;
+Chen and De Bondt, 2004), this concern is justified. Consistent with these studies, we
+indeed observe short-term momentum in common factor returns over our sample period.
+More specifically, over the January 1929 to December 2010 period, the market, size
+and value factors show positive persistence in 55%, 54%, and 56% of the months,
+respectively.! Hence, we expect that the dynamic factor exposures of conventional reversal
+strategies negatively affect the strategies’ profits. Consistent with this notion, we find that
+the alpha of the conventional reversal strategy following from the conditional model in
+Eq, (15) is larger than its raw return, The conventional reversal strategy based on total
+stock returns earns an average return of 69 basis points per month, while the strategy’s
+alpha is 87 basis points per month. The strategy’s negative exposure to short-term
+persistence in the Fama-French factors therefore appears to come at the cost of 18 basis
+points per month (87-69). All in all, the results show that the conventional reversal
+strategy’s dynamic factor exposures significantly contribute to the strategy’s risk and
+negatively affect its profitability.
+
+3.3. Factor exposures of reversal strategies based on residual returns
+
+‘As an alternative to conventional reversal strategy based on total stock returns, we
+propose to construct reversal portfolios based on residual stock returns resulting from
+performing rolling regressions using the Fama and French (1993) model. More specifically,
+wwe construct residual reversal portfolios by sorting stocks into either a winner ot a loser
+portfolio at the end of each month based on their estimated residual returns during that
+month, For each stock i and each formation month ‘1, we estimate Eq, (14) using stock
+returns over the preceding 36 months {/—36, tI]. Next, the estimated residual returns are
+standardized by dividing them by their standard deviations over the preceding 36 months.
+Standardization of the residual returns yields an improved measure of the extent to which
+a given firm-specific return shock is actually news, as opposed to noise, This facilitates a
+better interpretation of the residual as firm-specific information (Gutierrez. and Pirinsky,
+2007), Following the portfolio construction for the conventional reversal strategy, the
+winner (loser) portfolio of the residual reversal strategy consists of the stocks with an
+above (below) average standardized residual return
+
+Both portfolios are designed to be orthogonal to the Fama-French factors. To
+investigate the extent to which the factors are actually factor-neutral, we plot the factor
+exposures of the winner and loser portfolios of the residual reversal strategy against the
+factor returns during the formation month in Fig. 2. The residual reversal strategy clearly
+succeeds in avoiding dynamic factor exposures. While Fig. I shows an “X”-shaped relation
+between the factor exposures and lagged factor returns for the conventional reversal
+
+‘We measure persistence bythe empirical probability of having two consceutvefactor-return observations with
+the same sign
+488 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+
+strategy’s winner and loser portfolios, such a relation is not observable for the residual
+reversal strategy’s winner and loser portfolios.
+
+Panel B of Table 1 shows the conditional regression results for the residual reversal
+strategy. As expected, the residual reversal strategy outperforms the conventional reversal
+strategy in terms of both raw returns and risk-adjusted returns. The residual reversal
+strategy on average earns 90 basis points per month, which is 21 basis points more than the
+conventional reversal strategy. Moreover, the coefficient estimates of the conditional
+regression model in Eq. (15) are much closer to zero compared to the coefficient estimates
+for the conventional reversal strategy. At the same time, the R? value of the conditional
+regression model for the residual reversal strategy is close to zero, AS a result, the alpha of
+the residual reversal strategy is virtually identical to the strategy’s return. This observation
+is consistent with the predictions that follow from the analytical analysis discussed in the
+previous section, We also note that the alphas of the conventional and residual reversal
+strategies are almost identical, at 87 and 90 basis points per month, respectively. Assuming
+the conditional regression model from Eq, (15) is able to pick up the (dynamics in) factor
+exposures correctly, this is again consistent with the predictions that follow from the
+analytical analysis. To see this, compare Eqs. (4) and (12) and notice that the differences
+between the expected profits of the two reversal strategies only arise as a result of their
+differences between the factor exposures, for which we correct using the conditional
+regression model. Finally, note that compared to the conventional reversal strategy, the
+residual reversal strategy’s profits are also substantially less volatile. As a result, its Sharpe
+ratio of 1.20 is more than twice as large as the 0.57 Sharpe ratio of the conventional
+reversal strategy. Hence, ranking stocks on their residual returns is an effective approach
+for neutralizing the dynamic factor exposures that are present in conventional reversal
+strategies based on total returns.
+
+810,000.00
+
+$1,000.00
+
+$100.00
+
+$10.00
+
+$1.00
+
+$0.10
+
+Fig. 3. Cumulative reversal returns.
+This figure plots the cumulative returns from January 1929 to December 2010 for a hypothetical SV invested inthe
+‘conventional reversal strategy (gray) and the residual reversal strategy (black), The sample includes all common
+US. stocks listed on the NYSE, AMEX, and NASDAQ markets that have, atthe end of the formation month, a
+‘market eapitalization above the NYSE median, a price above $5, and return data forall proseding 36 months.
+
+D. Blitz etal. } Journal of Financial Markets 16 (2013) 477-04 489
+3.4, Robustness over time
+
+Our results in the previous subsection are based on the full January 1929 to December 2010
+period. We now investigate both reversal strategies’ profits over time and in different
+subperiods. Fig. 3 displays the cumulative returns for a hypothetical $1 invested in each of the
+two reversal strategies in January 1929, We observe that the graph corresponding to the
+residual reversal strategy (black) is steeper than the graph corresponding to the conventional
+reversal strategy (gray). Moreover, whereas the return on the conventional reversal strategy
+appears to flatten off over the most recent 20 years of our sample, the cumulative return of the
+residual reversal strategy portfolio continues to increase during the same period.
+
+We further examine the performance of both reversal strategies over time by calculating
+average returns and Sharpe ratios for each decade in our sample, As reported in Table 2,
+the conventional reversal strategy earns significant profits in five of the eight decades,
+Notably, the strategy is not profitable during the two most recent decades. This finding is
+consistent with results of Stivers and Sun (2011), who also document that the short-term
+reversal effect has substantially weakened over the post-1990 period, following the
+publication of several papers that describe the effect. In contrast, the residual reversal
+strategy earns significantly positive returns in each of the eight decades in our sample,
+including the 1990s and 2000s. Its return over these decades of 0.74% per month (t-statistic
+of 3.89) is also not much different from its long-run average return. Even when we consider
+the five most recent years of our sample period from 2006 to 2010, which includes the
+
+Table 2
+Reversal returns for different sample periods
+
+This table presents average monthly returns and annualized Sharpe ratios per decade the pre-1990 period, the post-
+1960 period and the last five years for the conventional reversal strategy and the residual reversal strategy. The test,
+Statstes and p-values of the Memmel (2003) corrected Jobson and Korkie (1981) test for equal Sharpe ratios are
+reported in the final two columns. The sample includes all common U.S. stocks listed on the NYSE, AMEX, and
+NASDAQ markets that have, at the end ofthe formation month, a market capitalization above the NYSE median, a
+brie above 85, and return data forall preceding 36 months. The reported rstatisis are Newey-West corrected,
+
+Conventional reversal Residual reversal Tobson-Korkie txt
+Time period Return Stat Sharpe Return FStat_— Sharpe 7-Seore ——_pralve
+1929-1939) Lol 1S} OG OK 225 SMH oot
+1940-1949 095 39012307322 730 0.00
+1950-1959 074 AS41389 86 Bl 0.00
+1960-1969 O78 382 12t 0987292 Td 0.00
+1970-1979 om 32) LOL M7122 908 0.00
+1980-1989 Oss 297094 m4 13S SRD 0.00
+1990-1999) ooo 00200) 3.97 HAAS 0.00
+2000-2010 042 os 02892398 0.00
+1929-1989 oss 075096 = Mss LTS 0 0.00
+1990-2010 on O16 078 389 aS 8a 0.00
+2006 oor oat 090030 321 0.00
+207 201 132-294 298138 os
+2008 =119 038-028 02424 0.08
+2009 o.i0 009098128138 hos 0.00
+
+201 09s 2) gk S387 3872.90 oot
+
+490 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+
+“quant meltdown” in 2007, the residual reversal strategy outperforms the conventional
+reversal strategy in every year.
+
+We argue that the weakening of the returns of a conventional reversal strategy can
+largely be attributed to the impact of the strategy’s dynamic factor exposures. being
+particularly negative over the two most recent decades of our sample. To gauge the
+magnitude of this negative impact, we evaluate the performance of a reversal strategy
+based on systematic returns, ie., non-residual stock returns over the full sample period and
+the period from January 1990 to December 2010.° For the pre-1990 period, we find a
+return of —0.05% (t-statistic of -0.43) per month, whereas for the period from 1990
+onwards, we find a return of ~0.68% (t-statistic of —2.58) per month. It thus appears that
+the negative return impact of a conventional reversal strategy’s dynamic factor exposures
+has increased to a significant level over the two most recent decades in the sample. As the
+residual component of stock returns still exhibits a large reversal effect over this period, the
+weak performance of conventional reversal strategies over the past two decades is largely
+attributable to the detrimental impact of the strategies’ dynamic factor exposures over this
+particular period
+
+Table 2 also shows that the residual reversal strategy outperforms the conventional
+reversal strategy in all but one decade in our sample in terms of raw returns, and in each
+decade in terms of risk-adjusted returns. The Jobson and Korkie (1981) test statistics show
+that the difference in Sharpe ratios is statistically significant in each decade. To summarize,
+our subperiod results show that the residual reversal strategy exhibits a strong performance
+relative to the conventional reversal strategy in each of the eight decades in our sample
+period, as well as over the long run,
+
+4, Reversal profits and trading costs
+
+Consistent with most of the literature, we find that reversal strategies yield large positive
+returns, The results obtained hitherto, however, ignore the impact of trading costs, such as
+bid-ask spreads, commissions, and price impact costs. A recent strand of literature
+re-examines stock market anomalies after incorporating trading costs. For example,
+Lesmond, Schill and Zhou (2004) and Korajezyk and Sadka (2004) argue that momentum
+profits are difficult to capture because momentum strategies require frequent rebalancing,
+while Chordia, Goyal, Sadka, Sadka, and Shivakumar, (2009) study the profitability of an
+investment strategy based on the post-earnings announcement drift and find that trading
+costs of the strategy are likely to be larger than the hypothetical profits. Directly related to
+our study, several studies find that a large portion of the profitability of a conventional
+reversal strategy disappears once trading costs are taken into account (e.g., Ball, Kothari
+and Wasley, 1993; Conrad, Gultekin and Kaul, 1997; Avramov, Chordia and Goyal,
+2006). In particular, Avramov, Chordia and Goyal (2006) find that stocks with the smallest
+capitalization and highest illiquidity exhibit the largest reversals. These stocks are also very
+
+‘We construct a long-short sysematie reversal portfolio by giving weighs to stocks atthe end of each month
+based on their estimated systematic returns during that month. For each stock J and each formation month 11
+wwe estimate Eq, (14) using stock returns over the preceding 36 months [t~36, tI]. The winner (laser) portfolio of
+Uy systematic reygrsal strategy gppsists of the stocks with above (below) average systematic returns, ie.
+By RMAF... +3) SMB + fh WML, in spirit similar to Eq. 2). The performance of a reversal
+Strategy that is long in the loser portfolio and short in the winner portfolio isnot presented in tabular form. The
+resulis ate available upon request
+
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-S04 491
+
+expensive to trade, however. After taking trading costs into account, the authors find that
+a conventional reversal strategy does not yield positive net returns.
+
+Consistent with Avramov, Chordia and Goyall (2006) and most of the related literature,
+we construct equally-weighted decile and quintile reversal portfolios of stocks and estimate
+trading costs using the model of Keim and Madhavan (1997) to investigate if reversal
+profits remain significant once trading costs are taken into account. Keim and Madhavan
+provide estimates of trading costs for 21 institutions from 1991 to 1993. These trading cost
+estimates include commissions paid, as well as an estimate of the price impact (including
+the impact of crossing the bid-ask spread) of the trades. Since trading costs are likely
+to be substantially larger before this period and because we have no reliable estimates
+before the 1990s, we perform this part of our analysis for the period from of January
+1990 to December 2010, Based on the Keim and Madhavan (1997) estimates, we
+model trading costs such that the costs of buy-initiated orders and sell-initiated orders are
+equal to
+
+ch = 0.767 + 0.336D)"""—0.084In( MC.) + Bs 807 06)
+
+and
+
+6.537
+
+CS" = 0.505 + 0.058D"""—0.059In(MC,,.) + ay
+
+a
+respectively, where C2” (C#") is the trading cost at time 1 in case order fis a buy-initiated
+(sell-initiated) order; D*““ is a dummy variable that takes the value one for stocks traded
+con the NASDAQ markets and is zero otherwise: MC,, is the market capitalization in
+month 1 of the stock traded: and P,, is the price per share of the stock traded at time f.
+Furthermore, we restrict the trading costs of a single order to be nonnegative.
+
+The profits of both reversal strategies over this recent period are shown in Table 3, Panel
+‘A. As discussed in the previous section, the average gross returns of both reversal strategies
+are lower over this period compared to those over the full 1929-2010 sample period. In
+fact, the return on the conventional reversal strategy is only 25 basis points per month
+and statistically indistinguishable from zero over the post-1990 period. Not surprisingly
+therefore, the net returns of the conventional reversal strategy even become negative after
+estimated trading costs are taken into account. These findings are consistent with the
+results reported by Avramov, Chordia and Goyal (2006). The residual reversal strategy,
+however, earns an average gross return of 102 basis points per month over the same period.
+Even afier trading costs are taken into account, the strategy remains highly profitable, with
+a net return of 66 basis points per month. We estimate that the break-even level is reached
+for trading costs of 56 basis points for a round-trip transaction. With such a high break-
+even level, it seems very unlikely that trading costs prevent profitable execution of a
+residual reversal strategy. Examining the distribution of trading costs for the cross-section
+of stocks over time, we find that the 80th percentile corresponds to roughly 60 basis points
+per round-trip transaction, In other words, trading costs would only subsume the profits of
+the residual reversal strategy if the strategy would systematically trade in the 20% most
+illiquid stocks in our sample. The results also show that the net returns, in excess of the
+CRSP total return index, of the individual long (Losers) and short (Winners) portfolios of
+the residual reversal strategy are both significantly positive and roughly equally large. This
+finding indicates that the residual reversal profits are not concentrated in short positions.
+
+Table 3
+Reversal returns and trading costs
+
+‘This table presents average gross and net monthly returns in exoess of the CRSP toll return index forthe long portfolios (Losers), the short portfolios (Winners)
+and the long plus short portfolios of the conventional reversal strategy and the residual reversal strategy. Furthermore the table presents average round-teip trading
+costs that would have resulted in break-even strategy returns, as well asthe average monthly strategies’ turnover. Panel A reports the results for our universe of stocks
+that have a market capitalization that i above the NYSE median. Panel Band C report the results for the largest 500 and 100 stocks in our sample, respectively. Net
+‘etums are calculated by subtracting the estimated trading costs that are based on the Keim and Madhavan (1997) model and are explained in detail in Eqs. (16) and
+(17), We aso report the net returns ofthe eversal strategies using a skip day approach in which the returns of the first trading day ofthe new month are not taken into
+account. The simple period is from January 1990 to December 2010. The sample inches all common US. stocks listed on the NYSE, AMEX, and NASDAQ
+‘markets that have, atthe end ofthe formation month, a price above $5, and return data forall preceding 36 months, Newey-West corrected /-satisic ae reported in
+parentheses.
+
+Panel Above NYSE mean &
+Gros retums Net ets Nat returs with kipday Brain Tumor >
+
+lows Wines L4W Lowry Winnens LW Lowes Winners LW i
+
+Conventional reversal 0.08 oT 025 019 0.05 0.24 0.19 0.19 0.39 uw 173 )
+03) O78) OTH) 03) ORO) OR 10) ?
+
+Residual revert om ‘ose ‘tm “oa ose “06” “038” “on “Guan 56 wo E
+2s) oy as) a) HOST) Ea
+
+Pant B50 Large cas 5
+Conventional reversil 0.10 016 026 0.00 0.08 0.09 002 oot 0.02 16 we
+03) 9) OAD IMA. CODH SH. S
+
+Residual ese a Yr 46 w
+es) eo ada). S
+
+Parc C100 Lange caps =
+Conentonal eral 00607030} ws mk om 0mm 8 w
+02) 00332. OMY OS). ?
+
+Resa! revert on oa ome ose ‘ogo Gas oe “0 Se © w &
+
+eB boy Bm eo) es) sy)
+
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-S04 493
+
+We further evaluate the profitability of reversal strategies by excluding small
+capitalization stocks from our sample. Panels B and C of Table 3 show the results for,
+ively, the largest 500 and largest 100 stocks in our sample.’ For both subsample
+the net profits of the conventional reversal strategy are not significantly larger than zero.
+In contrast, with net returns of 60 and 73 basis points per month, the residual reversal
+strategy generates statistically and economically significant profits for both subsamples.
+The estimated break-even levels of trading costs are 46 and 47 basis points per round-trip
+transaction.
+
+Besides taking into account trading costs, we also want to incorporate the effect of a
+potential implementation lag that might occur with a real-time application of a reversal
+strategy. To this end we additionally compute stock returns using return data from the
+daily CRSP US Stock Database, skipping the first trading day of each month.* The returns
+of the reversal strategies with a I-day skip are presented in the third column of Table 3.
+Even afier taking trading costs and an implementation lag into account, we find that the
+residual reversal strategies for the 500 and 100 largest stocks in our sample generate large
+net profits of 44 and 54 basis points per month, respectively. Therefore, it is very unlikely
+that reallife frictions such as trading costs and implementation lags prevent the profitable
+execution of residual reversal strategies.
+
+Our approach to examine the economic significance of reversal profits is likely
+conservative. First, as Keim and Madhavan (1997) show in their study, trading style may
+have a significant impact on trading costs. For example, technical traders that follow
+momentumlike strategies and have a great demand for immediacy typically experience
+large bid-ask costs, since the market demand for the stocks they aim to buy is substantially
+larger than the supply, and vice versa for sell transactions. In their study, Keim and
+Madhavan (1997) also find that technical traders generally experience higher trading costs
+than traders following strategies that demand less immediacy, such as value traders or
+index managers, and adjust trading cost estimates for these styles. Lehmann (1990) argues
+that short-term reversal traders are liquidity providers, and likely benefit from buying
+(shorting) prior period losers (winners) near the bid (ask). The Keim and Madhavan (1997)
+model, however, does not make an adjustment for liquidity-providing trading styles, such
+as reversal strategies. Because reversal strategies provide liquidity, trading costs are likely
+to be somewhat lower than the estimates we use in this analysis.
+
+Second, in this study we investigate naive top-minus-bottom decile reversal strategies that
+are rebalanced at a monthly frequency, In a recent study, De Groot, Huij and Zhou (2012)
+show that applying a more sophisticated portfolio construction algorithm can help to
+significantly reduce the turnover of reversal strategies without lowering their expected returns
+In their application, the authors find that more sophisticated buy/sell rules can approximately
+halve the negative impact of trading costs on reversal profits. By not taking into account the
+liquidity-providing nature of reversal trading, and by ignoring the potential efficiency gains
+that may be obtained with more sophisticated portfolio construction rules, our results are
+likely to underestimate the full profit potential of residual reversal investment strategies
+
+“In order to have a suiient large number of stocks in the portfolios, we sort stocks into quintiles instead of
+deciles when we evaluate the profitability of reversal strategies forthe largest 00 and 100 stocks,
+
+“By skipping the first day after portfolio formation, the results should also be less affected by potential bid-ask
+bounce effets
+494 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+
+A final observation is that the higher net return of the residual reversal strategy
+compared to the conventional reversal strategy comes from its higher gross expected
+return, as well as from incurring lower trading costs. For example, while the gross return
+difference between the conventional and residual reversal strategies is 77 basis points per
+month (102-25 basis points; see Table 3), the difference in net returns is 90 basis points per
+month (66+24 basis points). The reason for the lower trading costs of the residual reversal
+strategy is that, unlike the conventional reversal strategy, it does not trade excessively in
+volatile, small stocks. When stocks are ranked on raw past returns, stocks with the highest
+volatility have the greatest probability to end up in the extreme quantiles. These stocks are
+typically the stocks with the smallest market capitalizations. As a result, a portfolio that is
+Jong and short in these extreme quantiles is typically biased towards the smaller
+capitalization stocks. However, these stocks are also the most expensive to trade, so this
+feature of the conventional reversal strategy is harmful to its after-cost profitability,
+Because the residual reversal strategy is constructed in such a way that itis neutral to the
+SMB factor, we expect this effect to be less pronounced for the residual reversal strategy,
+
+Table
+Portfolio characters.
+
+‘This table presents characteristics of equally-weighted decile portfolios sorted on previous month total returns
+(Panel A) and previous month residual returns (Panel B). The monthly return volatility and the Fama and French
+(1993) theee-actor betas from Ea, (4) are the time-series averages of the medians in a portfolio and ae estimated
+using the 46 months prior to Formation date. Size denotes the time-series average of the median size decile, using
+NYSE, breakpoints in a portfolio a the end of the formation period: price denotes the time-series average of the
+median stock price atthe end ofthe formation peviod. The Keim and Madhavan (1997) transaction costs of "buy"
+and “e'induced orders are the time-series averages ofthe average costs in a portfolio. The sample period is From
+January 1990 to December 2010. The sample includes all common US. stocks lsted on the NYSE, AMEX, and
+NASDAQ markets that have, at the end of the formation month, a price above $5, and return data for
+preceding 36 months
+
+Panel A: Conventional reversal
+
+Loess 23 HST Winer
+Volatility (%) Sao S11 787775782 SOT SASS
+103097 0980840906 L106 19
+
+019 01S O13 OM OS AS 02002707
+019022 023028 24 022021 0.17 os
+S23 536 Sa) S859 SHS SHY SDA
+23504 3618 36603707 STI 3776 -ITH3 35.60
+O18 01S 0.1403 013.4313 OS 0.22
+003 0020200202422 0D_——O.0H
+
+Panel B: Residual recersal
+
+Lowes 2 34ST Winners
+Volatility (%) 866 «887883 SST ONAS ORDO OTD BSY ATS
+AM Tol 103 Lol 102102 LOL 1.000099 1.00,
+pone O18 021 021-022 0.220202 O21 0.20 0.22
+pine 0190.17 0170.20 020,020 21020023028
+Size Si S16 S18 S07 SP SUL S17. S08 S28 S19
+Price (8) 339 M33 MOT 3507 35.39 35693567 36.22 36873703
+Buy O18 0.17 017 0170.17 060.16 16S 0.16
+Sell (%) 0.03003 0030039020022 OMDB
+
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-S04 495
+
+To investigate whether this conjecture is true, we consider the decile portfolios’
+characteristics for both reversal strategies in Table 4,
+
+Consistent with the intuition that stocks with the highest volatility have the greatest
+probability to end up in the extreme quantiles when stocks are ranked on raw past returns,
+Table 4 shows that the top and bottom deciles for a conventional reversal strategy exhibit a
+substantially higher volatility than the mid-ranked portfolios. Furthermore, the portfolios’
+exposures to the SMB factor are substantially larger and their ranks on market
+capitalization are lower. When we consider the characteristics of the top and bottom decile
+portfolios for the residual reversal strategy, we do not observe that the extreme deciles
+contain more volatile, small-cap stocks. As a consequence, the trading costs involved with
+the residual reversal strategy are significantly lower than the costs associated with the
+conventional reversal strategy. For example, the single-trip buy trading costs for loser
+stocks based on the conventional reversal strategy are 28 basis points, vs. 18 basis points
+for the residual reversal strategy. Similarly, the single-trip sell costs for loser stocks based
+on the conventional reversal strategy are 4 basis points, compared to only 2 basis points for
+the residual reversal strategy.
+
+5. Follow-up empirical analyses
+
+In this section we conduct several follow-up analyses. We first examine the comparative
+strength of both reversal strategies. Next, we investigate the profitability of both reversal
+strategies within industries. We then examine the relation between reversal strategies’
+dynamie factor exposures and their profitability using a non-parametric approach. This
+is followed by an analysis of calendar month effects. Finally, we examine the robustness of
+our results to using alternative portfolio weighting schemes,
+
+Sil. Cross-sectional Fama-MacBeth regressions and double-sorted rank portfolios
+
+We perform cross-sectional regressions in the spirit of Fama and MacBeth (1973) to
+investigate what portion of the predictive power of total stock returns can be attributed to
+the residual component of the return, These regressions are performed at the individual
+stock level, allowing us to control for other effects. More specifically, we estimate the
+
+following two equations every month
+Fig Ht Paz gag + baZigy +O Xiao + ties (1s)
+and
+rat bi Why tba Li, y + bee Wi) FOX tts, 19)
+where z!,_ isa standardized score of stock /’s return in month 1; zi, isa standardized
+
+score of stock 7s standardized residual return in month ¢—1 estimated using Eq. (14); Xi,
+isa vector of control variables: Hi... and =_W;,_,) are interaction
+variables that indicate the score 21, (21, 1) stock isa loser stock or winner stock based
+on its return (residual return) in month 11, respectively, and zero otherwise.* Following
+Fama and French (2008), we include several variables to control for other effects that
+might explain the stock returns. These variables are the natural log of market
+
+standardization occu in the cross-section and scores are truncated between —3 and 3,
+496 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+
+Table 5
+Cross-sectional Fama-MacBeth (1973) regressions
+
+‘This table presents time-series averages of monthly coeiient estimates (multiplied by 100) that follow from the
+«cross-sectional Fama and MacBeth (1973) type of regressions of Eqs. (18) and (19). The dependent variable isthe
+monthly excess stock return. The sample period is from July 1963 to December 2010. The simple includes all
+‘common U-S. stocks sted on the NYSE, AMEX, and NASDAQ markets that have, atthe end ofthe formation
+‘month, a positive book-to-market ratio, a market capitalization above the NYSE median, a price above $5, and
+return data forall preceding months. Newey-West corrected tsatistcs are reported in parentheses.
+
+Total Residual Both Total Residual Both
+Constant N68 nat 13s ust na ios
+(1084) (1067) (108) (1082) (1070) 10.95)
+028 ou
+433) (1.03)
+: 035 01a
+(788) (5.68)
+-051 ~024
+(670) 192)
+013 0.29
+184) e39
+037 019
+(602) (206)
+033 058
+(650) (583)
+Ine) ~0.76 ~07: ~073 0.76 0.70
+oy) 1S) 2 IAS) 11)
+aya os 007 0.05 os 08
+(046) (048) (045) (0x7)
+Rirmt 061 0.68 0a 053
+en ee) e3n ery
+=091 “088 090 “092
+(235) (235) (3.00)
+AelB 0.08 os 03
+029, (0.3) (042)
+aja 28 02! 034
+1.60) (159) (208)
+ve os 0.29 033
+(00) (048) (038) (1.03) (085) (oa)
+Adjusted RE 0.08 0.08 0.09 0.09 0.08 0.09
+
+capitalization, In(MC); the natural log of the ratio between last fiscal year-end’s book
+equity divided by market equity in December, In(B/M); past twelve-minus-one month
+return, Ryo net stock issuance, NS; accruals, Ae/B; growth in assets, d4/A: and
+profitability, ¥/B.° Data on firms’ book values, net stock issuance, accruals, assets, and
+profitability are obtained from the Compustat database. Since Compustat data are only
+available as from 1963, this analysis is performed over the July 1963 to December 2010
+period.
+
+The time-series averages of the monthly coefficient estimates are presented in Table 5.
+For the first regression specification, there are statistically significant loadings on the
+
+A detailed description ofthe definition ofthe variables can be Found in Fama and French (2008)
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-S04 407
+
+‘ores of the lagged total returns (2), indicating that past month stock returns have
+predictive power for future stock returns. However, once =-scores of lagged residual
+returns (<') are included, all predictive power disappears. In the second regression
+specification, in which a distinction is made between (residual) return loser stocks and
+winner stocks, there is an asymmetric total return reversal effect. The residual return
+reversal effect. on the other hand, is equally strong for loser stocks as for winner stocks.
+Including all four interaction variables results in significant reversal effects for residual
+return losers and winners, but no reversal effect for total return winners, This finding is in
+line with the results of Jegadeesh and Titman (1995a), who report that over- or under-
+reaction to firm-specific information always contributes to the profitability of reversal
+strategies, while over- or under-reaction to the systematic factors can either reduce or
+increase these profits.
+
+‘We now construct double-sorted rank portfolios to further investigate what portion of
+the predictive power of stocks’ total returns can be attributed to the residual component of
+the return. For brevity, we do not report the results of this analysis in tabular form. To
+construct double-sorted rank portfolios, we start by sorting stocks into quintile portfolios
+based on their total returns and then subdivide each total-return quintile into quintiles
+based on the stocks’ residual returns. This process generates 25 portfolios that all contain
+an equal number of stocks. When we consider the portfolios’ average returns over the
+investment month, we observe that the returns are monotonically decreasing over the
+residual return quintiles within each total return quintile. The residual return loser quintil
+outperforms the residual return winner quintile by at least 62 basis points per month.
+Controlling for total returns, the loser-minus-winner spread is highly significant at 78 basis
+points per month. These results indicate that residual stock returns have predictive power
+for future stock returns above and beyond that of total stock returns,
+
+Next, we perform a similar double-sorting procedure, but now first sorting stocks into
+quintiles based on their residual returns and then subdividing the stocks into quintiles
+based on their total returns. Interestingly, when we consider these portfolios’ reversal-
+weighted returns over the investment month, we do not observe any return pattern at all
+across the portfolios sorted on total stock returns; the return spread between losers and
+winners is close to zero in all cases. Hence, after controlling for residual returns, total
+returns do not appear to have predictive power for future stock returns. These results
+corroborate our previous finding that most of the predictive power of total stock returns
+can be attributed to the residual component of the return:
+
+5.2. Within-industry reversal profits
+
+In this section we explore the profitability of both reversal strategies within different
+industries. Our motivation to investigate this issue stems from the contemporaneous
+findings of Hameed, Mian, and Huang (2010) and Da, Liu and Schaumburg (2011),
+who report higher returns for within-industry reversal strategies. To investigate if the
+residualization of stock returns relative to the Fama-French factors goes above and
+beyond correcting for industry effects, we compare conventional and residual reversal
+strategies applied within each of the 10 industries of French (2011). Similar to our earlier
+analyses, the winner (loser) portfolios consist of all the stocks with returns over the past
+month above (below) the cross-sectional average, and the weights of stocks are set
+498 D. Blitz etal. Jounal of Financial Markets 16 (2013) 477-504
+
+Table 6
+Reversal returns per industry
+
+‘This table presents average monthly returns and annualized Sharpe ratios forthe conventional reversal strategy
+and the residual reversal strategy for the 10 industries as classified by French (2011) for twa sample periods. The
+bottom rors of the panels report the average monthly returns and annualized Sharpe ratios forthe conventional
+reversal and residual reversal strategies within the industries, The test statistics andl p-values oF the Memmel (2003)
+corrected Jobson and Korkie (1981) test For equal Sharpe ratios ae reported in the final two columns. In Panel A,
+the sample period is from January 1929 to December 2010 and Panel B presents results for the sample period from
+January 1990 to December 2010, The sample includes all common US. stocks listed on the NYSE, AMEX, and
+NASDAQ markets that have, at the end of the formation month, a market capitalization above the NYSE
+median, a price above $5, and return data forall preceding 36 months. The reported tstatistis are Newey-West
+corrected.
+
+Panel A: January 1929 10 December 2010
+
+‘Conventional reversal Residual reversal Jobson-Korkie test
+Industries Retun —rStat_ Sharpe Return Stat Sharpe =Score —_p-Value
+Consumer non durables LO «6.58.73, 41 1st 0.00
+Consumer durables Os1 249028 536 0591524 0.00
+Manufacturing 117923 102 B39 148 BS 0.00
+Energy 18 61S 0.68 82409198 0.00
+Hitec 059 31S 035 S63 0621283 0.00
+‘Telecom 067 228 038 4360651317 0.0
+Shops 093 S38 Ot 987 1071825 0.00
+Health 036 350 Oe SI 108 2026 0.00,
+Utes 126 S86 06S 930 103 124s 0.00,
+thee 060 337037 1m 08s 1377 0.00
+Within industries 09 898 0.99 1789 1982127 0.00
+Panel B: January 1990 to December 2010
+
+‘Conventional reversal Residual reversal
+Industries Retum Stat Sharpe Return —rStat_— Sharpe
+Consumer non durables 11936209 S628
+Consumer durables 021 048 lL 06T 201 as
+Manufacturing 053 1830000486.
+Energy -01S 046 0.10 0.06 0220.05,
+HiTee OM 083 OS 06S 24283
+Telecom 60 © 120026 98 2750.60
+Shops 058 209 06 0877
+Health 0.10 0.17 0.08 1.0137 0.69
+Ulities 025077? 028123027
+Other 043 1270281085812
+Within industeies 038 188 040 O78 GIS LAS 0.00
+
+inversely proportional to the deviation of their past month return from the cross-sectional
+average industry return.
+
+Table 6 reports the average monthly returns for both reversal strategies within each
+industry. The full-sample results in Panel A of Table 6 show that residualization improves
+the performance of a conventional reversal strategy, as well as the performance of a
+D. Blitz etal. } Journal of Financial Markets 16 (2013) 477-04 499
+
+within-industry reversal strategy. The average return increases from 0.90% to 1.12% per
+month and the Sharpe ratio doubles, from 0.99 to 1.98. In fact, the residualization
+approach improves the Sharpe ratio within each of the 10 different industries. In Panel B
+of Table 6 we examine the results over the post-1990 period. Comparing these results to
+those in Table 2, applying a conventional reversal strategy within industries does little to
+improve its weak performance over this period, with average returns increasing only
+marginally from 0.22% to 0.38% per month. The residual reversal strategy, on the other
+hand, continues to perform strongly over the same period, regardless of whether the
+strategy is applied within industries or not. The within-industry application raw returns are
+slightly higher (0.78% per month vs. 0.74% per month) and the risk-adjusted returns are
+much higher (Sharpe ratio of 1.35 vs, 0.85) too.
+
+These results imply that residualization offers distinct benefits that cannot be simply
+captured by neutralizing industry exposures and that, rather than being substitutes, the
+two approaches are complimentary. To put it differently, a reversal strategy is in general
+most effective when both dynamic exposures to the Fama-French factors and dynamic
+exposures to industries are neutralized. This is consistent with the finding of several
+authors that the Fama and French factors do not suffice to describe the returns on industry
+portfolios (see, e.g., Fama and French, 1997).
+
+5.3. Non-parametric approach to measuring factor exposures
+
+Most of our evidence reported so far on the impact of dynamic factor exposures on the
+profitability of reversal strategies relies on the outcomes of the conditional factor
+regressions in the spirit of Grundy and Martin (2001) we performed in the previous section.
+In this section we re-investigate the relation between reversal strategies’ dynamic factor
+exposures and their profitability using a non-parametric approach that, unlike the factor
+regressions, does not rely on a linear factor structure, More specifically, with our non-
+parametric approach we regress the returns of the reversal strategies on dummy variables
+that indicate the number of Fama-French factors that revert (i., for which the sign of the
+
+Table 7
+Reversal returns conditional on factor returns
+
+‘This table presents average monthly returns For the conventional reversal strategy and the residual reversal
+strategy conditional on the numberof common factors that persist and revert. A factor persists (fevers) if the sign
+ofthe factor eturn in month ris similar (opposite) 0 the sig of the actor return in month 1. The final column
+‘of the table reports the empirical probabilities of the Four diferent states, The sample period is From January 1929
+{to December 2010. The sample ineludes all common USS. stocks listed on the NYSE, AMEX, and NASDAQ
+‘markets that have, atthe end ofthe formation month, a market capitalization above the NYSE median, a price
+ove $5, and return data for all preceding 36 months
+
+‘Conventional reversal Residual reversal
+Return Stat Return Stat Probability
+
+AAI factors persist, ~061 00 502 020
+
+factor reverts ~o.01 =0.06 070 590 037
+
+2 factors revert Las 627 oss 63 030
+
+AAU 3 factors revert, 39 S10 1st 476 012
+
+500 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+
+return during the formation period and investment period are different). If reversal
+strategies exhibit dynamic factor exposures that are inversely related to the signs of the
+factor returns during the formation period, reversal profits are negatively affected by
+persistence in common factor returns and returns are lower when fewer factors revert
+
+The results in Table 7 indicate that a conventional reversal strategy exhibits dynamic
+factor exposures that affect its profitability: reversal profits appear to increase
+monotonically with the number of Fama-French factors that revert. When all Fama-
+French factors persist, the strategy earns a negative return of ~61 basis points per month.
+In contrast, when all Fama-French factors revert, the conventional reversal strategy earns
+a highly positive return of 3.57% per month, Interestingly, the residual reversal strategy
+does not seem to exhibit such dynamic factor exposures as the strategy earns positive
+returns irrespective of the number of factors that revert, ranging between 0.70% and
+1.51% per month, In all cases, the residual reversal profits are highly significant. These
+results are consistent with our previous finding that a residual reversal strategy is less
+sensitive to the returns of common factors over the investment period than a conventional
+reversal strategy, resulting in less volatile returns.
+
+Table §
+Reversal returns per calendar month,
+
+‘This table presents average returns For the conventional reversal strategy and the residual reversal strategy per
+calendar month for the sample period January 1929 to December 2010 in Panel A. Panel B presents average
+January returns and non-January returns for the sample period starting from January 1990 to December 2010
+“The sample includes all common US. stock listed on the NYSE, AMEX, and NASDAQ markets that have, at
+the end of the formation month, a market capitalization above the NYSE median, a price above SS, and return
+data forall preceding 36 months
+
+Panel A: January 1929 10 December 2010
+
+Conventional reversal Residual reversal
+Month Retuen 1Stat Return Stat
+January 251 592 198
+
+February 036 Lid 100
+
+March Lu 208 120
+
+April 0.14 “038 028
+
+May 030 097 on
+
+June 2 12
+
+July Les 135
+
+August os 00
+
+September 0a 067
+
+October 033 oss
+
+November 047 028
+
+December 030 0m
+
+Panel B: January 1990 to December 2010
+
+‘Conventional reversal Residual reversal
+
+Month Return Stat Return Stat
+January 2 2H 203 396
+
+Non-Januaries ons 0.16 063 310
+
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-S04 sot
+54. Calendar month effects
+
+Proceeding further, we investigate the performances of the conventional and residual
+reversal strategies per calendar month. Several authors document strong seasonal patterns
+in reversal returns (e.g., Grinblatt and Moskowitz, 2004). In particular, average reversal
+returns in January are found to be highly positive. The cited reason is the tax-loss selling
+effect: fund managers tend to sell small-cap loser stocks by the year-end, resulting in
+downward price pressure in that month, which is followed by an upward price pressure in
+January. Because a reversal strategy is long in small-cap loser stocks, this effect causes a
+large positive return for the strategy in January. We refer to Roll (1983), Griffiths and
+White (1993), and D’Mello, Ferris, and Hwang (2003) for a detailed discussion of this
+effect.
+
+Because a residual reversal strategy is less concentrated in small-cap stocks compared to
+conventional reversal strategy, we expect the January effect to have a smaller impact
+on the performance of a residual reversal strategy. Therefore, we examine the average
+monthly returns during each calendar month for the conventional reversal vs. the residual
+reversal strategy. The results are presented in Table 8,
+
+Consistent with the prior literature, Table 8 shows that a large portion of the reversal
+profits are concentrated in January months. For example, the statistics of the
+conventional reversal strategy’s returns exceed +2.0 in only 4 out of 12 months. By
+contrast, residual reversal returns have t-statistics larger than +2.0 in 10 out of 12 months.
+Interestingly, for the post-1990 period, the conventional reversal strategy only earns
+positive returns in January. The average returns on other months are an insignificant
+0.05%. The residual reversal strategy, on the other hand, earns positive returns in January,
+as well as large positive returns of 0.63% on average in other months. Thus, residual
+reversal strategies are also more robust than conventional reversal strategies during the
+calendar year
+
+5.5, Alternative weighting schemes
+
+We performed most of our analyses on return-weighted portfolios as there does not seem
+to be a consensus in the literature on the use of a particular weighting scheme. Several
+important studies on the reversal effect employ a return-weighting scheme to construct
+reversal portfolios (¢.g., Lehmann, 1990; Lo and MacKinlay, 1990; Jegadeesh and Titman,
+1995a; Da, Liu and Schaumburg, 2011). However, there are also studies that employ
+equally-weighted portfolios instead (e.g., Jegadeesh, 1990; Boudoukh, Richardson and
+Whitelaw, 1994; Avramov, Chordia and Goyal, 2006; Hameed, Mian, and Huang, 2010;
+Stivers and Sun, 2011; De Groot, Huij and Zhou, 2012), while the short-term reversal
+factor of French (2011) is constructed using a value-weighting scheme. To investigate the
+robustness of our findings to the use of alternative weighting schemes, we redo all our
+analyses using equal-weighted and value-weighted decile portfolios. For brevity, the results
+of these analyses are not reported in tabular form but are available upon request from the
+authors. While the results of the analyses using the alternative weighting schemes are
+qualitatively very similar, they are generally the strongest for the equally-weighting
+scheme (e.g., the returns of the conventional and residual reversal strategies are 0.92% and
+1.28% per month, respectively, vs. 0.69% and 0.87% per month for the return-weighting
+scheme; see Table 1), and somewhat less pronounced using the value-weighting
+
+02 D. Blitz etal. | Jownal of Financial Markets 16 (2013) 477-04
+
+scheme (e.g., the returns of the conventional and residual reversal strategies are 0.53% and
+0.74% per month, respectively). For both alternative weighting schemes, the residual
+reversal strategy is more than 30% less volatile compared to the conventional reversal
+strategy. The profits of the residual reversal strategy for both alternative weighting
+schemes remain statistically and economically large over the most recent decades in our
+sample, We conclude that our results are robust to the weighting scheme used to construct
+reversal portfolios.
+
+6. Explanations for short-term stock reversals,
+
+In this section we discuss alternative hypotheses that have been put forward in the
+academic literature for understanding the reversal anomaly and the extent to which our
+results are consistent with the predictions following from these explanations. The literature
+on short-term stock reversals provides three main explanations for the effect: (1) reversals
+are the result of liquidity effects (e.g., Jegadeesh and Titman, 1995b); (2) reversals originate
+from non-synchronous trading of small and large cap stocks (e.g., Lo and MacKinlay,
+1990; Boudoukh, Richardson and Whitelaw, 1994); and (3) reversals are the result of
+investor overreaction to new information in the market (e.g., Lehmann, 1990; Jegad
+and Titman, 1995a).
+
+Our finding that net reversal profits persist over the most recent decades in our sample,
+during which market liquidity dramatically increased, is not supportive of the explanation
+that reversals are induced by inventory imbalances by market makers and that reversal
+profits are a compensation for bearing inventory risks. Also, our finding that reversal
+profits are observed among the 500 and even 100 largest stocks is inconsistent with the
+notion that non-synchronous trading contributes to reversal profits. Only the behavioral
+explanation that investors tend to overreact to information and that stock price reversals
+originate from transitory changes in demand for immediacy by these impatient traders,
+does not appear to be inconsistent with our findings, Our finding that the short-term
+reversal effect is concentrated in the firm-specific component of stock returns is consistent
+with the results of Gutierrez and Pirinsky (2007), who argue that agency issues in the
+money management industry (ie, institutions keeping their portfolios near a market index
+for reputation and career concerns) cause mispricing to be larger in the idiosyncratic return
+component of momentum strategies.
+
+However, our results do not provide direct evidence in support of such a (rationalized)
+behavioral explanation. A formal test for competing explanations for the short-term
+reversal effect is beyond the scope of this paper. An interesting avenue for future research
+would involve an in-depth empirical investigation of the relation between reversal profits
+and proxies for liquidity provision and investor sentiment [e.g., the sentiment factor
+of Baker and Wurgler (2006)] to directly test the liquidity hypothesis vs. the overreaction
+hypothesis. Another interesting research question that emerges from our results is,
+if reversals indeed originate from investor overreaction, why investors overreact to
+firm-specific information and not to macro information, A framework as employed by
+Gutierrez and Pirinsky (2007) that incorporates institutional holdings data might be used
+to investigate this research question.
+
+D. Blitz etal. { Journal of Financial Markets 16 (2013) 477-S04 sos
+
+7. Conclusion
+
+Conventional short-term reversal strategies exhibit dynamic exposures to the Fama and
+French (1993) factors. These factor exposures are inversely related to factor returns over
+the formation month, causing the reversal strategy to be negatively exposed to the short-
+term momentum effect in factor returns. As a result, dynamic factor exposures increase the
+risk of a reversal strategy, as well as negatively affect its profitability.
+
+We show that a short-term reversal strategy based on residual stock returns does not
+exhibit these dynamic factor exposures and earns returns that are substantially larger than
+those of a conventional short-term reversal strategy. Additionally, the residual reversal
+strategy has a significantly lower volatility. The lower volatility together with the higher
+returns cause the residual reversal strategy to earn risk-adjusted returns that are twice as
+large as those of a conventional reversal strategy. In faet, the profits of the residual reversal
+strategy are statistically and economically significant after trading costs. The large residual
+reversal profits we document are remarkably robust over time and the cross-section of
+stocks.
+
+Our results shed new light on different explanations for the reversal anomaly that have
+been suggested in the literature. Our finding that net reversal profits persist over the most
+recent decades in our sample, during which market liquidity dramatically increased, is not
+supportive of the explanation that reversals are induced by inventory imbalances by
+market makers and that reversal profits are a compensation for bearing inventory risks.
+Moreover, our finding that reversal profits are observed among the 500 and even 100
+largest stocks is inconsistent with the notion that non-synchronous trading contributes to
+reversal profits. Our findings do not appear to be inconsistent though with the behavioral
+argument that investors tend to overreact to information and that stock price reversals
+originate from transitory changes in demand for immediacy by these impatient traders
+(Lehmann, 1990; Jegadeesh and Titman, 1995a), although our study does not provide
+direct support for this hypothesis.
+
+Finally, our findings indicate that in order to generate returns sufficiently large enough,
+to cover trading costs, itis of crucial importance to control factor exposures. Hence, apart
+from contributing to a better understanding of the origins of the reversal effect, our
+findings also have important implications for the practical implementation of reversal
+strategies.
+
+References
+
+Avramoy, D., Chordia, T., Goyal, A. 2006, Liquidity and autocorrelatons in individual stock returns. Journal of
+Finance 61, 2365-2394
+
+Baker, M., Wargler,1., 2006, Investor sentiment and the cross-section of stock returns, Journal of Finance
+1685-1680,
+
+Ball, R., Kothari, $., Wasley, C., 1995. Can we implement research on stock trading rules? Journal of Portfolio
+Management 21, 54-63.
+
+Blivz, D., Hui), 1, Martens, M., 207. Residual momentum. Journal of Empitieal Finance 18, 306-521
+
+Boudoukh, J, Richardson, M., Whitelas, R., 1994, A tale of theee school: insights on autocorselations of short
+horizon stock returns. Review of Financial Studies 7, 539-573,
+
+Chea, H., De Bondi, W., 2004. Style momentum witha the S&P-S00 index. Journal of Empirical Finance
+483-507,
+
+sot D. Blitz etal. Jounal of Financial Markets 16 (2013) 477-S04
+
+Chordia, T:, Goyal, A., Sadka, G., Sadka, R., Shivakumar, L., 2009, Liquidity and the postearings-
+announcement drift, Financial Analysts Journal 65, 18-32,
+
+Conrad, J, Gultekin, M., Kaul, G., 1997. Profitability of short-term contrarian strategies: implications for market
+ficiency. Journal of Business and Economic Statistics 15, 379-386,
+
+a, Z., Liu, Q., Schaumburg, E., 2011. Decomposing Short-Term Return Reversal. Working Paper
+
+De Groot, W.. Hui J, Zhou, W.,2012. Another look at trading eosts and short-term reversal pros. Journal of|
+Banking and Finance 36, 371-382,
+
+D'Mello, R., Ferris, S., Hwang, C., 2003. The tax-oss selling hypothesis, market liquidity, and price pressure
+around the turnof-the-yea. Journal of Financial Markets 6, 73-98,
+
+Fama, E., French, K., 1993. Common risk factors in the returns on stocks and bonds, Journal of Financial
+Economics 33, 3-56
+
+ama, E., French, K., 1997, Industry cost of equity: Journal of Financial Economics 43,
+
+Fama, E., Freneh, K.. 2008, Dissecting anomalies, Journal of Finance 63 1653-1678,
+
+Fama, E. MacBeth, 1, 1973. Risk, return, and equilibrium: empirical tess. Journal of Political Ezonomy 81
+‘607-636.
+
+Fisher, L., 1966, Some new stock market indexes. Journal of Business 39, 191-22
+
+French, K.. 2011, Fama and French factors. Available from: <hitpwww.mba.tuck dartmouth edulpage
+faculty ken.french data library html).
+
+Griffiths, M., White, R., 1993. Tax induced trading and the turn-of-the-year anomaly: an intraday study Journal
+‘of Finance 48, 575-598,
+
+Grinblatt, M., Moskowitz, T., 2004. Predicting stock price movements from past returns: the role of consistency
+‘and tax-loss selling. Journal of Financial Economics 71, 541-579,
+
+Grundy, B., Martin, J. 2001. Understanding the nature ofthe risks and the souree ofthe rewards to momentum
+investing, Review of Financial Studies 14, 29-78,
+
+Gutierrez, R., Pinsky, C., 2007. Momentum, reversal, and the trading behaviors of institutions. Journal of|
+Financial Markets 10, 48-75,
+
+Hameed, A., Mian, G., Huang, J, 2010. Industries and Stock Return Reversals. Working Paper
+
+Jegadeesh, N., 1990, Evidence of predictable behavior of security returns. Journal of Finance 4S, 81-898
+
+Jegadeesh, N. Titman, S., 199Sa. Overreation, delayed reaction, and contrarian profits. Review of Financial
+‘Studies §, 973-993,
+
+Jegadeesh, N., Titman, S., 1995b, Short-horizon return reversals and the bid-ask spread. Journal of Financial
+Intermediation 4, 16-132.
+
+Jobson, J, Korke, B., 1981, Performance hypothesis testing with the Sharpe and Treynor measures. Journal of
+Finance 36, 889-908,
+
+Keim, D., Madhavan, A., 1997, Transaction costs and investment sty: an inter-eyehange analysis oF inst
+equity trades. Journal of Financial Economics 46, 265-292,
+
+Korajezsk, R., Sadka, R., 2004. Ate momentum profits robust to trading costs? Journal of Finance 59,
+1039-1082,
+
+Lehmann, B, 1990. Fads, martingales, and market efficiency. Quarterly Journal of Economics 108, 1-
+
+LLesmond, D., Schill, M., Zhou, C:, 2004, The illusory nature of momentum profits. Journal of Financial
+Economics 71, 349-380,
+
+Lo, A., MacKinlay, A., 1990, When are contrarian profits due to stock market overreaction? Review of Financial
+‘Studies 3, 175-208,
+
+‘Memmel, C, 2003. Performance hypothesis testing with the Sharpe ratio. Finance Letters 1, 21-23
+
+Moskowitz, T., Grinblatt, M., 1999. Do industries explain momentum? Journal of Finance 54, 1249-1290.
+
+Roll, R., 1983. Vas ist das? Journal of Portfolio Management 9, 18-28.
+
+Stivers, C, Sun, L., 2011. New Evidenee on Short-Term Reversals in Monthly Stock Returns: Overreation or
+iguidity? Working Paper.
+
+198
+
+tutional
+
